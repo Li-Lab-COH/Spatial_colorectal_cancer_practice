@@ -17,7 +17,7 @@ IMAGE="/path/to/tissue_image.jpg"       # Path to H&E stained image
 SLIDE="V11J26-127"                      # Slide serial number
 AREA="B1"                               # Capture area on the slide
 
-#Testing_2
+#Testing_3
 
 # Run Space Ranger count pipeline
 ${SPACERANGER_PATH}/spaceranger count \
