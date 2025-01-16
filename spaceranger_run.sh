@@ -1,33 +1,41 @@
 #!/bin/bash
-#SBATCH --job-name=spaceranger_ffpe       
-#SBATCH --output=spaceranger_ffpe.out 
-#SBATCH --error=spaceranger_ffpe.err  
-#SBATCH --ntasks=1                       
-#SBATCH --cpus-per-task=32               
-#SBATCH --mem=128G                       
-#SBATCH --time=48:00:00                  
+#SBATCH --job-name=spaceranger_ffpe_array
+#SBATCH --output=spaceranger_ffpe_%a.out  # Output for each array job
+#SBATCH --error=spaceranger_ffpe_%a.err   # Error for each array job
+#SBATCH --ntasks=1                          
+#SBATCH --cpus-per-task=32                  
+#SBATCH --mem=128G                          
+#SBATCH --time=48:00:00                     
+#SBATCH --array=0-0
 
-# Define variables
-SPACERANGER_PATH="https://www.10xgenomics.com/support/software/space-ranger/latest/analysis/inputs/input-overview"  # Path to Space Ranger installation
-OUTPUT_DIR="/path/to/output_directory"  # Directory where outputs will be saved
-TRANSCRIPTOME="/path/to/refdata"  # Reference transcriptome for mouse samples
-PROBE_SET="/path/to/human_v2_probeset.csv"  # Probe set for FFPE
-FASTQ_DIR="/path/to/fastq_directory"    # Directory containing FASTQ files
-IMAGE="/path/to/tissue_image.jpg"       # Path to H&E stained image
-SLIDE="V11J26-127"                      # Slide serial number
-AREA="B1"                               # Capture area on the slide
+# Define CSV file location
+CSV_FILE="/home/janzules/Spatial/practice_colorectal_cancer/code/addresses/spaceranger_count_reference.csv"
+SPACERANGER_PATH="/home/janzules/Spatial/software/spaceranger-3.1.2"
 
-#Testing_3
+# Parse the CSV file to extract relevant information
+IFS=","
+mapfile -t SAMPLE_INFO < <(tail -n +2 "$CSV_FILE")
+
+# Get the current sample based on the job array index
+CURRENT_SAMPLE="${SAMPLE_INFO[$SLURM_ARRAY_TASK_ID]}"
+
+# Extract fields from the CSV line
+read -r sample_id fastq_file transcriptome probe_set loupe_alignment hne_image cytassist_image slide_info area_info <<< "$(echo $CURRENT_SAMPLE | tr -d '"')"
+
+# Log the current sample being processed
+echo "Processing sample: $sample_id"
 
 # Run Space Ranger count pipeline
 ${SPACERANGER_PATH}/spaceranger count \
-    --id=spaceranger_ffpe_analysis \
-    --transcriptome=${TRANSCRIPTOME} \
-    --probe-set=${PROBE_SET} \
-    --fastqs=${FASTQ_DIR} \
-    --image=${IMAGE} \
-    --slide=${SLIDE} \
-    --area=${AREA} \
+    --id="${sample_id}" \
+    --transcriptome="${transcriptome}" \
+    --probe-set="${probe_set}" \
+    --fastqs="${fastq_file}" \
+    --image="${hne_image}" \
+    --cytaimage="${cytassist_image}" \
+    --loupe-alignment="${loupe_alignment}" \
+    --slide="${slide_info}" \
+    --area="${area_info}" \
     --reorient-images=true \
     --localcores=32 \
     --localmem=128
