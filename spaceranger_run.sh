@@ -8,7 +8,7 @@
 #SBATCH --time=48:00:00                  
 
 # Define variables
-SPACERANGER_PATH="/path/to/spaceranger"  # Path to Space Ranger installation
+SPACERANGER_PATH="https://www.10xgenomics.com/support/software/space-ranger/latest/analysis/inputs/input-overview"  # Path to Space Ranger installation
 OUTPUT_DIR="/path/to/output_directory"  # Directory where outputs will be saved
 TRANSCRIPTOME="/path/to/refdata"  # Reference transcriptome for mouse samples
 PROBE_SET="/path/to/human_v2_probeset.csv"  # Probe set for FFPE
