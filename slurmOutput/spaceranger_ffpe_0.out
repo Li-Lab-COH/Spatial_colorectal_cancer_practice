@@ -1,0 +1,134 @@
+Sample ID       : human_CC_practice
+Output Folder   : /home/janzules/Spatial/practice_colorectal_cancer/data/output_files/
+Fastq File      : /home/janzules/Spatial/practice_colorectal_cancer/data/Visium_HD_Human_Colon_Cancer_fastqs
+Transcriptome   : /home/janzules/Spatial/references/refdata-gex-GRCh38-2020-A
+Probe Set       : /home/janzules/Spatial/references/Visium_Human_Transcriptome_Probe_Set_v2.0_GRCh38-2020-A.csv
+Loupe Alignment : /home/janzules/Spatial/practice_colorectal_cancer/data/input_files/Visium_HD_Human_Colon_Cancer_alignment_file.json
+H&E Image       : /home/janzules/Spatial/practice_colorectal_cancer/data/input_files/Visium_HD_Human_Colon_Cancer_tissue_image.btf
+CytAssist Image : /home/janzules/Spatial/practice_colorectal_cancer/data/input_files/Visium_HD_Human_Colon_Cancer_image.tif
+Slide Info      : H1-YD7CDZK
+Area Info       : A1
+Processing sample: human_CC_practice
+Martian Runtime - v4.0.13
+Serving UI at http://ppxhpcnode39.coh.org:39924?auth=WXTWpvXP6V_eDxUsH4MQ-FPmP5-_ewtAaaQKDV0SVrc
+
+Running preflight checks (please wait)...
+Checking sample info...
+Checking FASTQ folder...
+Checking reference...
+Checking reference_path (/home/janzules/Spatial/references/refdata-gex-GRCh38-2020-A) on ppxhpcnode39.coh.org...
+Checking read 2 length...
+Checking optional arguments...
+mro: v4.0.13
+mrp: v4.0.13
+python: Python 3.10.8
+numpy: 1.26.4
+scipy: 1.10.1
+pysam: 0.21.0
+h5py: 3.9.0
+pandas: 2.1.4
+STAR: 2.7.2a
+samtools: samtools 1.16.1
+2025-01-15 21:45:05 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.FIX_CYTASSIST_IMAGE_COMPATIBILITY
+2025-01-15 21:45:05 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.FIX_CYTASSIST_IMAGE_COMPATIBILITY.fork0.chnk0.main
+2025-01-15 21:45:05 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER.WRITE_GENE_INDEX
+2025-01-15 21:45:05 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER.WRITE_GENE_INDEX.fork0.chnk0.main
+2025-01-15 21:45:05 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER_PREP.COPY_CHEMISTRY_SPEC
+2025-01-15 21:45:06 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER_PREP.COPY_CHEMISTRY_SPEC.fork0.chnk0.main
+2025-01-15 21:45:06 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER.DISABLE_FEATURE_STAGES
+2025-01-15 21:45:06 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER.DISABLE_FEATURE_STAGES.fork0.chnk0.main
+2025-01-15 21:45:06 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER._BASIC_SPATIAL_RNA_COUNTER._MATRIX_COMPUTER.DISABLE_CORRECTION_FACTOR
+2025-01-15 21:45:06 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER._BASIC_SPATIAL_RNA_COUNTER._MATRIX_COMPUTER.DISABLE_CORRECTION_FACTOR.fork0.chnk0.main
+2025-01-15 21:45:06 [runtime] (chunks_complete) ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER_PREP.COPY_CHEMISTRY_SPEC
+2025-01-15 21:45:06 [runtime] (chunks_complete) ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER.DISABLE_FEATURE_STAGES
+2025-01-15 21:45:06 [runtime] (chunks_complete) ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.FIX_CYTASSIST_IMAGE_COMPATIBILITY
+2025-01-15 21:45:06 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER_PREP.DETECT_CHEMISTRY
+2025-01-15 21:45:06 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER_PREP.DETECT_CHEMISTRY.fork0.chnk0.main
+2025-01-15 21:45:06 [runtime] (chunks_complete) ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER._BASIC_SPATIAL_RNA_COUNTER._MATRIX_COMPUTER.DISABLE_CORRECTION_FACTOR
+2025-01-15 21:45:06 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.GET_CYTASSIST_RUN_METADATA
+2025-01-15 21:45:06 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.GET_CYTASSIST_RUN_METADATA.fork0.chnk0.main
+2025-01-15 21:45:07 [runtime] (chunks_complete) ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.GET_CYTASSIST_RUN_METADATA
+2025-01-15 21:45:10 [runtime] (chunks_complete) ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER_PREP.DETECT_CHEMISTRY
+2025-01-15 21:45:10 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER_PREP.MULTI_SETUP_CHUNKS
+2025-01-15 21:45:10 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER_PREP.MULTI_SETUP_CHUNKS.fork0.chnk0.main
+2025-01-15 21:45:10 [runtime] (chunks_complete) ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER_PREP.MULTI_SETUP_CHUNKS
+2025-01-15 21:45:11 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER.BIN_HD_DATA.SETUP_BINNING
+2025-01-15 21:45:11 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER.BIN_HD_DATA.SETUP_BINNING.fork0.chnk0.main
+2025-01-15 21:45:11 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.DETERMINE_PIPELINE_MODE
+2025-01-15 21:45:11 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.DETERMINE_PIPELINE_MODE.fork0.chnk0.main
+2025-01-15 21:45:11 [runtime] (chunks_complete) ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER.BIN_HD_DATA.SETUP_BINNING
+2025-01-15 21:45:11 [runtime] (chunks_complete) ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.DETERMINE_PIPELINE_MODE
+2025-01-15 21:45:11 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER.WEBSUMMARY_ALERTS
+2025-01-15 21:45:11 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER.WEBSUMMARY_ALERTS.fork0.chnk0.main
+2025-01-15 21:45:11 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.STANDARDIZE_IMAGES
+2025-01-15 21:45:11 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.STANDARDIZE_IMAGES.fork0.split
+2025-01-15 21:45:11 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER.DISABLE_SD_ONLY_STAGES
+2025-01-15 21:45:11 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER.DISABLE_SD_ONLY_STAGES.fork0.chnk0.main
+2025-01-15 21:45:11 [runtime] (chunks_complete) ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER.DISABLE_SD_ONLY_STAGES
+2025-01-15 21:45:12 [runtime] (chunks_complete) ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER.WEBSUMMARY_ALERTS
+2025-01-15 21:45:15 [runtime] (split_complete)  ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.STANDARDIZE_IMAGES
+2025-01-15 21:45:15 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.STANDARDIZE_IMAGES.fork0.join
+2025-01-15 21:45:23 [runtime] (chunks_complete) ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER.WRITE_GENE_INDEX
+2025-01-15 21:45:23 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER.PARSE_TARGET_FEATURES
+2025-01-15 21:45:23 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER.PARSE_TARGET_FEATURES.fork0.chnk0.main
+2025-01-15 21:45:36 [runtime] (chunks_complete) ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER.PARSE_TARGET_FEATURES
+2025-01-15 21:45:36 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER._BASIC_SPATIAL_RNA_COUNTER._MATRIX_COMPUTER.MAKE_SHARD
+2025-01-15 21:45:36 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER._BASIC_SPATIAL_RNA_COUNTER._MATRIX_COMPUTER.MAKE_SHARD.fork0.split
+2025-01-15 21:45:36 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER._TARGETED_ANALYZER.DISABLE_TARGETED_STAGES
+2025-01-15 21:45:36 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER._TARGETED_ANALYZER.DISABLE_TARGETED_STAGES.fork0.chnk0.main
+2025-01-15 21:45:38 [runtime] (chunks_complete) ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER._TARGETED_ANALYZER.DISABLE_TARGETED_STAGES
+2025-01-15 21:45:49 [runtime] (split_complete)  ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER._BASIC_SPATIAL_RNA_COUNTER._MATRIX_COMPUTER.MAKE_SHARD
+2025-01-15 21:45:49 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER._BASIC_SPATIAL_RNA_COUNTER._MATRIX_COMPUTER.MAKE_SHARD.fork0.chnk0.main
+2025-01-15 21:45:49 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER._BASIC_SPATIAL_RNA_COUNTER._MATRIX_COMPUTER.MAKE_SHARD.fork0.chnk1.main
+2025-01-15 21:45:49 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER._BASIC_SPATIAL_RNA_COUNTER._MATRIX_COMPUTER.MAKE_SHARD.fork0.chnk2.main
+2025-01-15 21:45:49 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER._BASIC_SPATIAL_RNA_COUNTER._MATRIX_COMPUTER.MAKE_SHARD.fork0.chnk3.main
+2025-01-15 21:48:55 [runtime] (join_complete)   ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.STANDARDIZE_IMAGES
+2025-01-15 21:48:59 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.LOUPE_ALIGNMENT_READER
+2025-01-15 21:48:59 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.LOUPE_ALIGNMENT_READER.fork0.split
+2025-01-15 21:48:59 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.CLOUPE_TILE_IMAGES
+2025-01-15 21:48:59 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.CLOUPE_TILE_IMAGES.fork0.split
+2025-01-15 21:49:00 [runtime] (split_complete)  ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.LOUPE_ALIGNMENT_READER
+2025-01-15 21:49:00 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.LOUPE_ALIGNMENT_READER.fork0.join
+2025-01-15 21:49:01 [runtime] (join_complete)   ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.LOUPE_ALIGNMENT_READER
+2025-01-15 21:49:01 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.GPR_READER
+2025-01-15 21:49:01 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.HD_LAYOUT_READER
+2025-01-15 21:49:01 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.HD_LAYOUT_READER.fork0.chnk0.main
+2025-01-15 21:49:01 [runtime] (split_complete)  ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.CLOUPE_TILE_IMAGES
+2025-01-15 21:49:01 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.CLOUPE_TILE_IMAGES.fork0.join
+2025-01-15 21:49:02 [runtime] (chunks_complete) ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.HD_LAYOUT_READER
+2025-01-15 21:49:02 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.ALIGN_FIDUCIALS
+2025-01-15 21:49:02 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.ALIGN_FIDUCIALS.fork0.split
+2025-01-15 21:49:07 [runtime] (split_complete)  ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.ALIGN_FIDUCIALS
+2025-01-15 21:49:07 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.ALIGN_FIDUCIALS.fork0.join
+2025-01-15 21:49:12 [runtime] (join_complete)   ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.ALIGN_FIDUCIALS
+2025-01-15 21:49:12 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.DETECT_TISSUE
+2025-01-15 21:49:12 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.DETECT_TISSUE.fork0.split
+2025-01-15 21:49:12 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.REGISTER_TISSUE.SEED_REGISTRATION
+2025-01-15 21:49:12 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.REGISTER_TISSUE.SEED_REGISTRATION.fork0.split
+2025-01-15 21:49:18 [runtime] (split_complete)  ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.DETECT_TISSUE
+2025-01-15 21:49:18 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.DETECT_TISSUE.fork0.join
+2025-01-15 21:49:29 [runtime] (split_complete)  ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.REGISTER_TISSUE.SEED_REGISTRATION
+2025-01-15 21:49:29 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.REGISTER_TISSUE.SEED_REGISTRATION.fork0.join
+2025-01-15 21:49:32 [runtime] (join_complete)   ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.REGISTER_TISSUE.SEED_REGISTRATION
+2025-01-15 21:49:32 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.REGISTER_TISSUE.REGISTER_FROM_INIT
+2025-01-15 21:49:32 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.REGISTER_TISSUE.REGISTER_FROM_INIT.fork0.split
+2025-01-15 21:49:34 [runtime] (split_complete)  ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.REGISTER_TISSUE.REGISTER_FROM_INIT
+2025-01-15 21:49:34 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.REGISTER_TISSUE.REGISTER_FROM_INIT.fork0.join
+2025-01-15 21:49:36 [runtime] (join_complete)   ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.REGISTER_TISSUE.REGISTER_FROM_INIT
+2025-01-15 21:49:36 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.REGISTER_TISSUE.SUMMARIZE_REGISTRATION
+2025-01-15 21:49:36 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.REGISTER_TISSUE.SUMMARIZE_REGISTRATION.fork0.chnk0.main
+2025-01-15 21:49:42 [runtime] (chunks_complete) ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.REGISTER_TISSUE.SUMMARIZE_REGISTRATION
+2025-01-15 21:51:33 [runtime] (join_complete)   ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.DETECT_TISSUE
+2025-01-15 21:51:34 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.OUTPUT_SPOTS_BARCODES
+2025-01-15 21:51:34 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.OUTPUT_SPOTS_BARCODES.fork0.split
+2025-01-15 21:51:35 [runtime] (split_complete)  ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.OUTPUT_SPOTS_BARCODES
+2025-01-15 21:51:35 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.OUTPUT_SPOTS_BARCODES.fork0.join
+2025-01-15 21:51:51 [runtime] (update)          ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER._BASIC_SPATIAL_RNA_COUNTER._MATRIX_COMPUTER.MAKE_SHARD.fork0 chunks running (0/4 completed)
+2025-01-15 21:52:13 [runtime] (join_complete)   ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.OUTPUT_SPOTS_BARCODES
+2025-01-15 21:52:14 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_RNA_COUNTER._BASIC_SPATIAL_RNA_COUNTER._MATRIX_COMPUTER.COMPUTE_CORRECTION_FACTOR
+2025-01-15 21:52:14 [runtime] (ready)           ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.CALCULATE_FLUORESCENCE_INTENSITY
+2025-01-15 21:52:14 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.CALCULATE_FLUORESCENCE_INTENSITY.fork0.split
+2025-01-15 21:52:15 [runtime] (split_complete)  ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.CALCULATE_FLUORESCENCE_INTENSITY
+2025-01-15 21:52:15 [runtime] (run:local)       ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.CALCULATE_FLUORESCENCE_INTENSITY.fork0.join
+2025-01-15 21:52:16 [runtime] (join_complete)   ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.SPATIAL_IMAGING_CS.CALCULATE_FLUORESCENCE_INTENSITY
+2025-01-15 21:55:03 [runtime] (update)          ID.human_CC_practice.SPATIAL_RNA_COUNTER_CS.CLOUPE_TILE_IMAGES.fork0 join_running
