@@ -50,18 +50,19 @@ echo "Area Info       : $area_info"
 # Log the current sample being processed
 echo "Processing sample: $sample_id"
 
+cd ${output_folder}
 # Run Space Ranger count pipeline
 ${SPACERANGER_PATH}/spaceranger count \
     --id="${sample_id}" \
-    --output-dir "${output_folder}" \
     --transcriptome="${transcriptome}" \
     --probe-set="${probe_set}" \
     --fastqs="${fastq_file}" \
     --image="${hne_image}" \
     --cytaimage="${cytassist_image}" \
     --loupe-alignment="${loupe_alignment}" \
-    --create-bam true \
+    --create-bam=true \
     --localcores=32 \
     --localmem=128
     # --slide="${slide_info}" \
     # --area="${area_info}" \
+    #  --output-dir "${output_folder}" \
