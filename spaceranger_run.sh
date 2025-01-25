@@ -6,10 +6,10 @@
 #SBATCH --cpus-per-task=32                  
 #SBATCH --mem=128G                          
 #SBATCH --time=48:00:00                     
-#SBATCH --array=0-0
+#SBATCH --array=0-2
 
 # Define CSV file location
-CSV_FILE="/home/janzules/Spatial/practice_colorectal_cancer/code/addresses/spaceranger_count_reference.csv"
+CSV_FILE="/home/janzules/Spatial/practice_colorectal_cancer/code/addresses/spaceranger_count_reference_clc.csv"
 SPACERANGER_PATH="/home/janzules/Spatial/software/spaceranger-3.1.2"
 
 # Parse the CSV file to extract relevant information
@@ -50,7 +50,10 @@ echo "Area Info       : $area_info"
 # Log the current sample being processed
 echo "Processing sample: $sample_id"
 
+# Move to output folder
 cd ${output_folder}
+
+
 # Run Space Ranger count pipeline
 ${SPACERANGER_PATH}/spaceranger count \
     --id="${sample_id}" \
@@ -60,7 +63,7 @@ ${SPACERANGER_PATH}/spaceranger count \
     --image="${hne_image}" \
     --cytaimage="${cytassist_image}" \
     --loupe-alignment="${loupe_alignment}" \
-    --create-bam=true \
+    --create-bam=false \
     --localcores=32 \
     --localmem=128
     # --slide="${slide_info}" \

@@ -7,5 +7,8 @@
 #SBATCH --cpus-per-task=1               
 #SBATCH --mem=1G                         
 
-# Human reference
-wget -P /home/janzules/Spatial/references "https://cf.10xgenomics.com/supp/spatial-exp/refdata-gex-GRCh38-2020-A.tar.gz"
+# # Human reference
+# wget -P /home/janzules/Spatial/references "https://cf.10xgenomics.com/supp/spatial-exp/refdata-gex-GRCh38-2020-A.tar.gz"
+
+# Mouse reference
+wget -P /home/janzules/Spatial/references "https://cf.10xgenomics.com/supp/spatial-exp/refdata-gex-mm10-2020-A.tar.gz"
